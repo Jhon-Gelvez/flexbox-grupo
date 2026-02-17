@@ -1,0 +1,77 @@
+.header__nav {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav__a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.main__div {
+    box-shadow: #000 0 0 20px;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__div__img {
+    width: 150px;
+    height: auto;
+}
+
+.main__div__button {
+    width: 100px;
+}
+
+.main__article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    flex-wrap: wrap; /*esto hace que si la img no cabe no genere scroll y la tire hacia abajo */
+}
+
+.main__article__div__img {
+    width: 200px;
+    height: 200px;
+}
+
+.main__article__form {
+    width: 100dvw;
+}
+
+.main__article__form__fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.main__article__form__fieldset__div {
+    width: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.main__article__form__input {
+    margin: 10px;
+}
+.main__article__form__fieldset__div--button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
