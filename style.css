@@ -94,8 +94,8 @@
   /* izquierda - centro - derecha */
   align-items: center;
   padding: 14px 0;
-  border-bottom: 2px solid #E0B6FF;
-  background: #F6EDFF;
+  border-bottom: 2px solid #fffeff;
+  background: #0d0d0d;
 }
 
 /* CENTRO (DOCUMENTOS) */
@@ -108,12 +108,12 @@
 
 .icon {
   font-size: 22px;
-  color: #8A20D5;
+  color: #f2eded;
 }
 
 .section-center h2 {
   margin: 0;
-  color: #1E1B1B;
+  color: #fcfcfc;
   font-weight: 700;
 }
 
@@ -128,15 +128,125 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
-  color: white;
-  background: linear-gradient(135deg, #8A20D5, #B86BFF);
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #000000, #040404);
   padding: 6px 14px;
   border-radius: 20px;
   transition: 0.25s ease;
 }
 
 .ver-todo:hover {
-  background: linear-gradient(135deg, #6A11CB, #A450FF);
+  background: linear-gradient(135deg, #3b3b3b, #575757);
   transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(138, 32, 213, 0.25);
+  box-shadow: 0 3px 8px rgba(100, 100, 100, 0.25);
 }
+
+/* los estilos de la lista de tareas */
+.task-section {
+  width: 100%;
+  background-color:#212121;
+  padding: 20px 0;
+}
+
+.task-list {
+  list-style:disc;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly; /* usamos el evenly para que el espacio sea uniforme */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.task-item {
+  color: #ecebeb;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+/*los estilos del testimonial */
+.testimonial-card {
+  display: flex; /* alineamos a los hijos en fila */
+  align-items: center;
+  background-color: #212121;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: #ecebeb rgba(blue, alpha);
+}
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 3px solid #000000
+}
+
+.tstimonial-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-text {
+  font-size: italic;
+  margin-bottom: 12px;
+}
+
+.testimonial-autor {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/* estilos del footer */
+.footer {
+  background-color: #212121;
+  color: #ecebeb;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between; /* distribuimos por igualdad */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border: top 3px solid #000;
+}
+.footer__column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.footer__title {
+  color: #602b77;
+  margin-bottom: 15px;
+  font-size: 2.0rem;
+}
+
+.footer__text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer__list {
+  list-style:inside;
+  padding: 2px; 
+}
+
+.footer__list li {
+  margin-bottom: 8px;
+}
+
+.footer__list a {
+  color: #7d009d;
+  text-decoration:line-through;
+  font-size: 0.9rem;
+}
+
+.footer__list a:hover {
+  text-decoration:none;
+  color: #ff0000;
+}
+
