@@ -1,71 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>apropiacion del conocimiento</title>
+    <title>Tienda Virtual - Zapatos Deportivos</title>
+    <!-- 
+    ============================================
+    PÁGINA MEJORADA Y ARREGLADA CON FLEXBOX
+    ============================================
+    -->
 </head>
 
 <body>
-<div class="section-header">
-  
-  <div class="left-space"></div>
+    <div class="section-header">
+        <div class="left-space"></div>
+        <div class="section-center">
+        <h2>Tienda Zapatos Deportivos</h2>
+    </div>
 
-  <div class="section-center">
-    <span class="icon">⚡</span>
-    <h2>Tienda virtual ⚡</h2>
-  </div>
-
-  <div class="section-right">
-    <a href="#" class="ver-todo">Ver todo</a>
-  </div>
+    <div class="section-right">
+        <a href="#" class="ver-todo">Ver todo</a>
+    </div>
 
 </div>
-
-    <!-- BARRA DE NAVEGACION -->
+<!-- BARRA DE NAVEGACION -->
     <heder class="header">
         <nav class="header__nav">
-            <a class="header__nav__a" href="#">home</a>
-            <a class="header__nav__a" href="#">about as</a>
-            <a class="header__nav__a" href="#">sing in</a>
-            <a class="header__nav__a" href="#">sing up</a>
+            <a class="header__nav__a" href="#">Home</a>
+            <a class="header__nav__a" href="#">About as</a>
+            <a class="header__nav__a" href="#">Sing in</a>
+            <a class="header__nav__a" href="#">Sing up</a>
         </nav>
     </heder>
+
+    <!-- SIDEBAR DE NAVEGACIÓN -->
+    <aside class="sidebar">
+        <nav class="sidebar__nav">
+            <h3 class="sidebar__title">Categorías</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">🏃 Deportivos</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">👟 Casuales</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">👔 Formales</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">🎒 Urbanos</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">⭐ Ofertas</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
     <main class="main">
         <!-- TARJETA -->
         <div class="main__div">
             <img class="main__div__img"
-                src="https://www.sportline.com.co/media/catalog/product/f/v/fv5948-101_phsrh000-1000.png?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:&format=jpeg"
+                src="Recursos/Catalogo Virtual.png"
                 alt="producto">
-            <p class="main__div__p">Zapatos deportivos marca nike</p>
+            <p class="main__div__p">Nuestros Zapatos Deportivos</p>
             <button class="main__div__button">Comprar</button>
         </div>
         <!-- Galería de imágenes con filas que se ajusten al ancho del contenedor. -->
         <article class="main__article">
             <div class="main__article__div">
                 <img class="main__article__div__img"
-                    src="https://cdn-images.farfetch-contents.com/12/16/12/07/12161207_59827104_600.jpg" alt="producto">
+                    src="Recursos/adidas.png" 
+                    alt="Adidas">
             </div>
             <div class="main__article__div">
                 <img class="main__article__div__img"
-                    src="https://nikeco.vtexassets.com/arquivos/ids/677115/DM4044_108_A_PREM.jpg?v=638623621327130000"
-                    alt="producto">
+                    src="Recursos/nike.png"
+                    alt="Nike">
             </div>
             <div class="main__article__div">
                 <img class="main__article__div__img"
-                    src="https://m.media-amazon.com/images/I/614m696a3NL._AC_SL1100_.jpg" alt="producto">
+                    src="Recursos/reebook.png" 
+                    alt="Reebook">
             </div>
             <div class="main__article__div">
                 <img class="main__article__div__img"
-                    src="https://www.calzatodopaisa.com/wp-content/uploads/2025/06/Tenis-Nike-Air-Max-96-Para-Hombre-2.webp"
-                    alt="producto">
+                    src="Recursos/puma.png" 
+                    alt="Puma">
             </div>
             <div class="main__article__div">
                 <img class="main__article__div__img"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQItYmTRsQ2YhNWUfviWRQxXr8a674I6Rlc6g&s"
-                    alt="producto">
+                    src="Recursos/newbalance.png" 
+                    alt="New Balance">
             </div>
         </article>
         <!-- Formulario de contacto con campos alineados en columnas y filas. -->
@@ -97,7 +125,6 @@
             </form>
         </article>
         <!-- Encabezado de sección con ícono y texto justificados. -->
-        <article class="main__article"></article>
             <section class="task-section">
                 <ul class="task-list">
                     <li class="task-item">👟 Revisar Inventario</li>
@@ -110,9 +137,152 @@
                 <img class="tesyimonial-avatar" src="https://i.pravatar.cc/100" alt="usuario">
                 <div class="testimonial-content">
                     <p class="testimonial-text">la calidad de los zapatos es muy buena, son muy comodos y el precio es muy accesible, es una pagina muy recomendable</p>
-                    <span class="testimonial-autor">alias pepito perez</span>
+                    <span class="testimonial-autor">Cliente Fiel</span>
                 </div>
             </div>
+
+            <!-- Sección de Combos Ecommerce -->
+            <section class="combos-section">
+                <h2 class="combos-section__title">Nuestros Combos</h2>
+                <p class="combos-section__subtitle">Elige el combo perfecto para ti</p>
+                
+                <div class="combos-container">
+                    <!-- Combo Básico -->
+                    <div class="combo-card combo-card--basic">
+                        <div class="combo-card__badge">Más Popular</div>
+                        <h3 class="combo-card__title">Combo Básico</h3>
+                        <div class="combo-card__price">
+                            <span class="combo-card__currency">$</span>
+                            <span class="combo-card__amount">399.000</span>
+                        </div>
+                        
+                        <div class="combo-card__description">
+                            <p class="combo-card__description-text">3 pares de zapatos deportivos básicos</p>
+                            <div class="combo-card__colors">
+                                <span class="combo-card__color-label">Colores disponibles:</span>
+                                <div class="combo-card__color-swatches">
+                                    <span class="color-swatch color-swatch--black" title="Negro"></span>
+                                    <span class="color-swatch color-swatch--white" title="Blanco"></span>
+                                    <span class="color-swatch color-swatch--gray" title="Gris"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="combo-card__preview">
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/adidas.png" alt="Zapato básico" class="combo-card__preview-img">
+                            </div>
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/nike.png" alt="Zapato básico" class="combo-card__preview-img">
+                            </div>
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/newbalance.png" alt="Zapato básico" class="combo-card__preview-img">
+                            </div>
+                        </div>
+
+                        <div class="combo-card__benefits">
+                            <ul class="combo-card__benefits-list">
+                                <li>✓ Solo categoría: Deportiva Básica</li>
+                                <li>✓ Colores neutros</li>
+                                <li>✓ Precio cerrado</li>
+                                <li>✓ Envío estándar</li>
+                            </ul>
+                        </div>
+
+                        <button class="combo-card__button combo-card__button--basic" data-combo="basic">
+                            Comprar Combo
+                        </button>
+                    </div>
+
+                    <!-- Combo Intermedio -->
+                    <div class="combo-card combo-card--intermediate">
+                        <h3 class="combo-card__title">Combo Intermedio</h3>
+                        <div class="combo-card__price">
+                            <span class="combo-card__currency">$</span>
+                            <span class="combo-card__amount">499.000</span>
+                        </div>
+                        
+                        <div class="combo-card__description">
+                            <p class="combo-card__description-text">3 pares de zapatos deportivos de calidad media</p>
+                            <p class="combo-card__description-note">Puedes elegir los modelos específicos dentro de la categoría deportiva</p>
+                        </div>
+
+                        <div class="combo-card__preview">
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/adidas.png" alt="Modelo ejemplo" class="combo-card__preview-img">
+                            </div>
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/puma.png" alt="Modelo ejemplo" class="combo-card__preview-img">
+                            </div>
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/reebook.png" alt="Modelo ejemplo" class="combo-card__preview-img">
+                            </div>
+                        </div>
+
+                        <div class="combo-card__benefits">
+                            <ul class="combo-card__benefits-list">
+                                <li>✓ Elige modelos específicos</li>
+                                <li>✓ Calidad media superior</li>
+                                <li>✓ Categoría deportiva</li>
+                                <li>✓ Envío express</li>
+                            </ul>
+                        </div>
+
+                        <button class="combo-card__button combo-card__button--intermediate">
+                            Comprar Combo
+                        </button>
+                    </div>
+
+                    <!-- Combo Premium -->
+                    <div class="combo-card combo-card--premium">
+                        <div class="combo-card__badge combo-card__badge--premium">Premium</div>
+                        <h3 class="combo-card__title">Combo Premium</h3>
+                        <div class="combo-card__price">
+                            <span class="combo-card__currency">$</span>
+                            <span class="combo-card__amount">599.000</span>
+                        </div>
+                        
+                        <div class="combo-card__description">
+                            <p class="combo-card__description-text">3 pares de zapatos de máxima calidad</p>
+                            <p class="combo-card__description-note">Elige categoría (Deportivo, Urbano, Casual) y modelos específicos</p>
+                        </div>
+
+                        <div class="combo-card__preview">
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/nike.png" alt="Modelo ejemplo" class="combo-card__preview-img">
+                            </div>
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/newbalance.png" alt="Modelo ejemplo" class="combo-card__preview-img">
+                            </div>
+                            <div class="combo-card__preview-item">
+                                <img src="Recursos/puma.png" alt="Modelo ejemplo" class="combo-card__preview-img">
+                            </div>
+                        </div>
+
+                        <div class="combo-card__categories-info">
+                            <p class="combo-card__categories-label">Categorías disponibles:</p>
+                            <div class="combo-card__categories-tags">
+                                <span class="category-tag">Deportivo</span>
+                                <span class="category-tag">Urbano</span>
+                                <span class="category-tag">Casual</span>
+                            </div>
+                        </div>
+
+                        <div class="combo-card__benefits">
+                            <ul class="combo-card__benefits-list">
+                                <li>✓ Elige categoría y modelos</li>
+                                <li>✓ Máxima calidad</li>
+                                <li>✓ Variedad de estilos</li>
+                                <li>✓ Envío gratis</li>
+                            </ul>
+                        </div>
+
+                        <button class="combo-card__button combo-card__button--premium">
+                            Comprar Combo
+                        </button>
+                    </div>
+                </div>
+            </section>
     </main>
     <footer class="footer">
     <div class="footer__column">
@@ -131,7 +301,7 @@
     
     <div class="footer__column">
         <h3 class="footer__title">Contactanos</h3>
-        <p class="footer__text">📍 Calle 123 via girón, bucaramanga santander</p>
+        <p class="footer__text">📍 Calle 123 Via Girón, Bucaramanga-Santander</p>
         <p class="footer__text">📞 +57 315 813 5837</p>
         <p class="footer__text">📧 calzadobuca@gmail.com</p>
     </div>
